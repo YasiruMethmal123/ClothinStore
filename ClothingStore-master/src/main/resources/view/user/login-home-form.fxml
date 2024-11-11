@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.PerspectiveTransform?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="445.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.demo.controller.user.LoginHomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" height="457.0" layoutY="-6.0" stroke="#080626" strokeType="INSIDE" width="459.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <fill>
+            <LinearGradient endX="0.09848484487244577" endY="0.6060609095024341" startX="1.0" startY="0.6136363798921758">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.004678362514823675" green="0.31578946113586426" blue="0.28986355662345886" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.006200000178068876" green="0.3100000023841858" blue="0.28468334674835205" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.007843137718737125" green="0.30980393290519714" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9599999785423279" green="0.9599999785423279" blue="0.9599999785423279" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Text fill="WHITE" layoutX="301.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To ClothingStore!" textAlignment="CENTER" wrappingWidth="140.79998779296875">
+         <font>
+            <Font name="Kalam" size="23.0" />
+         </font>
+      </Text>
+      <TitledPane animated="false" layoutX="-126.0" layoutY="-10.0" text="untitled" />
+      <Text fill="#faf7f7" layoutX="338.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hi...">
+         <font>
+            <Font name="Kalam" size="52.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#024f49" height="289.0" layoutX="29.0" layoutY="82.0" opacity="0.25" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <JFXButton fx:id="btnlogin" buttonType="RAISED" layoutX="88.0" layoutY="217.0" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #3358ff;" text="Login" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnregister" layoutX="88.0" layoutY="308.0" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #3358ff;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="50.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account??" />
+      <Text fill="WHITE" layoutX="77.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A New Member??" />
+      <Text fill="#130e0e" layoutX="62.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Text>
+      <Separator layoutX="35.0" layoutY="257.0" prefHeight="3.0" prefWidth="184.0" />
+      <Separator layoutX="251.0" layoutY="21.0" orientation="VERTICAL" prefHeight="360.0" prefWidth="0.0">
+         <effect>
+            <PerspectiveTransform />
+         </effect>
+      </Separator>
+   </children>
+</AnchorPane>

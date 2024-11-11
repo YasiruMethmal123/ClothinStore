@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="443.0" layoutX="-5.0" stroke="WHITE" strokeType="INSIDE" width="454.0">
+         <fill>
+            <LinearGradient endX="0.9962121081171614" endY="0.7045454473206492" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.007843137718737125" green="0.30980393290519714" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <JFXButton fx:id="btnExit" buttonType="RAISED" layoutX="143.0" layoutY="360.0" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #6584EA;" text="Go to Home" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="servicesCmb" layoutX="81.0" layoutY="195.0" prefHeight="26.0" prefWidth="282.0" promptText="From our Services" visibleRowCount="4" />
+      <JFXButton fx:id="btnContinue" buttonType="RAISED" layoutX="143.0" layoutY="280.0" prefHeight="31.0" prefWidth="158.0" style="-fx-background-color: #6584EA;" text="Continue" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

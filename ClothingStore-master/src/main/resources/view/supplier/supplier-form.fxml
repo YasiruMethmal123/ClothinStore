@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="513.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="732.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.43939394120014075" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.007843137718737125" green="0.30980393290519714" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6609756097560975">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7317073170731707">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8317073170731707">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Rectangle>
+      <TableView layoutX="64.0" layoutY="167.0" prefHeight="298.0" prefWidth="430.0">
+         <columns>
+            <TableColumn fx:id="colSupId" prefWidth="71.1999740600586" text="Supplier Id " />
+            <TableColumn fx:id="colSupName" prefWidth="94.39996337890625" text="Supplier Name " />
+            <TableColumn fx:id="colCompany" prefWidth="71.20001220703125" text="Company" />
+            <TableColumn fx:id="colEmail" prefWidth="97.5999755859375" text="Email address" />
+            <TableColumn fx:id="colProductName" prefWidth="92.0" text="Product Name" />
+         </columns>
+      </TableView>
+      <Separator layoutX="510.0" layoutY="167.0" orientation="VERTICAL" prefHeight="298.0" prefWidth="0.0" />
+      <Separator layoutX="276.0" layoutY="103.0" prefWidth="200.0" />
+      <Label fx:id="lblCategory" layoutX="183.0" layoutY="47.0" prefHeight="54.0" prefWidth="374.0" text="        Our Suppliers " textFill="#fffcfc" wrapText="true">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnNewSupplier" layoutX="561.0" layoutY="423.0" style="-fx-background-color: #6584EA;" text="Add new Supplier" textFill="WHITE" />
+      <JFXTextField fx:id="txtCompany" layoutX="547.0" layoutY="187.0" promptText="Company " />
+      <JFXTextField fx:id="txtSupName" layoutX="547.0" layoutY="236.0" promptText="UserName" />
+      <JFXTextField fx:id="txtEmail" layoutX="547.0" layoutY="286.0" promptText="Email address" />
+      <JFXTextField fx:id="txtProductName" layoutX="547.0" layoutY="334.0" promptText="ProductName" />
+      <Label fx:id="lblSupId" layoutX="546.0" layoutY="382.0" text="Supplier Id " />
+   </children>
+</AnchorPane>

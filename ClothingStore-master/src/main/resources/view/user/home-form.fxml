@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.demo.controller.user.HomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="450.0" stroke="BLACK" strokeType="INSIDE" width="447.0">
+         <fill>
+            <LinearGradient endX="0.060606063766912986" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.007843137718737125" green="0.30980393290519714" blue="0.2862745225429535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#024f49" height="354.0" layoutX="79.0" layoutY="48.0" opacity="0.25" stroke="BLACK" strokeType="INSIDE" width="289.0" />
+      <JFXButton fx:id="btnlogin" buttonType="RAISED" layoutX="182.0" layoutY="259.0" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #3999fa;" text="Login" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtEmail" layoutX="156.0" layoutY="132.0" promptText="Email" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="156.0" layoutY="200.0" promptText="Password" />
+      <Text fill="WHITE" layoutX="144.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need to verify your account??" />
+      <JFXButton fx:id="btnOtp" buttonType="RAISED" layoutX="181.0" layoutY="345.0" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #3999fa;" text="OTP" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
